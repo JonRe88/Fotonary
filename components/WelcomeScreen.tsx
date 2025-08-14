@@ -15,7 +15,7 @@ export function WelcomeScreen({ onStartRound }: WelcomeScreenProps) {
   return (
     <View style={styles.container}>
       <Animated.View entering={FadeInUp.delay(200)} style={styles.header}>
-        <Text style={styles.title}>🎨 Pictionary</Text>
+        <Text style={styles.title}>🎨 Fotonary</Text>
         <Text style={styles.subtitle}>¡Dibuja, adivina y gana!</Text>
       </Animated.View>
 
@@ -27,7 +27,7 @@ export function WelcomeScreen({ onStartRound }: WelcomeScreenProps) {
         </View>
         
         <View style={styles.statCard}>
-          <Clock size={32} color="#10B981" strokeWidth={2} />
+          <Clock size={28} color="#10B981" strokeWidth={2} />
           <Text style={styles.statValue}>{settings.roundTime}s</Text>
           <Text style={styles.statLabel}>Por Ronda</Text>
         </View>
@@ -76,40 +76,40 @@ export function WelcomeScreen({ onStartRound }: WelcomeScreenProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
+    padding: 18,
     justifyContent: 'space-between',
   },
   header: {
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 16,
   },
   title: {
-    fontSize: 48,
+    fontSize: 38,
     fontFamily: 'Inter-Bold',
     color: '#FFFFFF',
     textAlign: 'center',
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 14,
     fontFamily: 'Inter-Regular',
     color: '#9CA3AF',
     textAlign: 'center',
-    marginTop: 8,
+    marginTop: 4,
   },
   statsContainer: {
     flexDirection: 'row',
-    gap: 16,
-    marginVertical: 32,
+    gap: 12,
+    marginVertical: 22,
   },
   statCard: {
     flex: 1,
     backgroundColor: '#1F2937',
     padding: 20,
-    borderRadius: 16,
+    borderRadius: 12,
     alignItems: 'center',
   },
   statValue: {
-    fontSize: 24,
+    fontSize: 20,
     fontFamily: 'Inter-Bold',
     color: '#FFFFFF',
     marginTop: 8,
