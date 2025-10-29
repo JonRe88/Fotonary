@@ -254,8 +254,8 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   strokeOption: {
-    width: 40,
-    height: 40,
+    width: 60,
+    height: 60,
     borderRadius: 8,
     backgroundColor: '#374151',
     alignItems: 'center',
