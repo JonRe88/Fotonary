@@ -255,8 +255,8 @@ const styles = StyleSheet.create({
   },
   strokeOption: {
     width: 60,
-    height: 60,
-    borderRadius: 8,
+    height: 80,
+    borderRadius: 6,
     backgroundColor: '#374151',
     alignItems: 'center',
     justifyContent: 'center',
