@@ -126,7 +126,7 @@ export function GameScreen({ onRoundEnd }: GameScreenProps) {
           style={[styles.actionButton, styles.successButton]}
           onPress={() => handleRoundEnd(true)}
         >
-          <Check size={24} color="#FFFFFF" strokeWidth={2} />
+          <Check size={22} color="#FFFFFF" strokeWidth={2} />
           <Text style={styles.actionButtonText}>¡Adivinó!</Text>
         </TouchableOpacity>
       </Animated.View>
@@ -194,19 +194,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Inter-Regular',
     color: '#9CA3AF',
-    marginTop: 4,
+    marginTop: 2,
     textTransform: 'capitalize',
   },
   canvasContainer: {
     flex: 1,
-    margin: 16,
+    margin: 12,
     borderRadius: 12,
     overflow: 'hidden',
   },
   actionButtons: {
     flexDirection: 'row',
-    gap: 16,
-    padding: 16,
+    gap: 12,
+    padding: 12,
   },
   actionButton: {
     flex: 1,
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#10B981',
   },
   actionButtonText: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: 'Inter-Bold',
     color: '#FFFFFF',
   },
