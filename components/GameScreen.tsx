@@ -118,7 +118,7 @@ export function GameScreen({ onRoundEnd }: GameScreenProps) {
           style={[styles.actionButton, styles.failButton]}
           onPress={() => handleRoundEnd(false)}
         >
-          <X size={24} color="#FFFFFF" strokeWidth={2} />
+          <X size={20} color="#FFFFFF" strokeWidth={2} />
           <Text style={styles.actionButtonText}>No Adivinó</Text>
         </TouchableOpacity>
 
@@ -126,7 +126,7 @@ export function GameScreen({ onRoundEnd }: GameScreenProps) {
           style={[styles.actionButton, styles.successButton]}
           onPress={() => handleRoundEnd(true)}
         >
-          <Check size={22} color="#FFFFFF" strokeWidth={2} />
+          <Check size={20} color="#FFFFFF" strokeWidth={2} />
           <Text style={styles.actionButtonText}>¡Adivinó!</Text>
         </TouchableOpacity>
       </Animated.View>
@@ -179,12 +179,12 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   wordLabel: {
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: 'Inter-Regular',
     color: '#9CA3AF',
   },
   word: {
-    fontSize: 28,
+    fontSize: 22,
     fontFamily: 'Inter-Bold',
     color: '#FFFFFF',
     marginTop: 4,
